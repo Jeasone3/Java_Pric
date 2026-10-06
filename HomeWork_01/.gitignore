@@ -1,0 +1,6 @@
+.idea/
+out/
+.verification/
+*.class
+*.log
+.DS_Store

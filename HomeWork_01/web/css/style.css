@@ -1,0 +1,206 @@
+/* 页面使用简单的表格和表单，统一留白与字号。 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f4ee;
+    color: #283b32;
+    font-family: "Microsoft YaHei", KaiTi, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 40px auto;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-box {
+    max-width: 440px;
+    margin-top: 80px;
+}
+
+.form-box {
+    max-width: 800px;
+}
+
+h1 {
+    margin: 0 0 18px;
+    font-size: 26px;
+}
+
+a {
+    color: #2f6853;
+}
+
+.muted {
+    color: #667085;
+    font-size: 14px;
+}
+
+.topbar, .account, .toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.topbar {
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.topbar h1 {
+    margin-bottom: 0;
+}
+
+.account {
+    font-size: 14px;
+}
+
+.toolbar {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 18px 0 6px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b7bec8;
+    border-radius: 4px;
+    color: inherit;
+    background: #fff;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button, .button {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #2f6853;
+    border-radius: 4px;
+    background: #2f6853;
+    color: #fff;
+    font: inherit;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    opacity: 0.85;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 2px solid #2f6853;
+    outline-offset: 3px;
+}
+
+.secondary {
+    border-color: #b7bec8;
+    background: #fff;
+    color: #283b32;
+}
+
+.danger {
+    border-color: #a92b2b;
+    background: #a92b2b;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.inline-form {
+    display: inline-block;
+    margin: 0;
+}
+
+.notice {
+    padding: 12px;
+    border: 1px solid #bdd2e8;
+    border-radius: 4px;
+    background: #eff6fd;
+}
+
+.error {
+    color: #8f2424;
+    border-color: #e8bcbc;
+    background: #fff2f2;
+}
+
+.empty {
+    padding: 28px 16px;
+    border: 1px dashed #b7bec8;
+    color: #667085;
+    text-align: center;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: #f2efe6;
+    white-space: nowrap;
+}
+
+.memo-title {
+    min-width: 180px;
+    max-width: 360px;
+    overflow-wrap: anywhere;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions > * {
+    margin: 4px 8px 4px 0;
+}
+
+.actions button {
+    padding: 5px 9px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 16px;
+        padding: 20px;
+    }
+
+    .login-box {
+        margin: 40px auto;
+        width: calc(100% - 32px);
+    }
+}
